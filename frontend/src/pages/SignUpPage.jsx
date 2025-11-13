@@ -46,7 +46,7 @@ function SignUpPage() {
                     </div>
                   </div>
 
-                  EMAIL INPUT
+                  {/* EMAIL INPUT */}
                   <div>
                     <label className="auth-input-label">Email</label>
                     <div className="relative">
