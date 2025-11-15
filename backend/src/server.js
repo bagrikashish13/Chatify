@@ -8,8 +8,8 @@ import messageRoutes from "./routes/message.route.js";
 import {connectDB }from "./lib/db.js";
 import dotenv from "dotenv";
 dotenv.config();
+import {app, server} from "./lib/socket.js";
 
-const app=express({ });
 app.use(express.json({ limit: "10mb" }));
 app.use(express.urlencoded({ extended: true, limit: "10mb" }));
 
@@ -31,7 +31,7 @@ if(process.env.NODE_ENV==="production"){
 	res.sendFile(path.join(__dirname, "../frontend", "dist", "index.html"));
    });
 }
-app.listen(PORT,()=>{
+server.listen(PORT,()=>{
         console.log("server started at: "+ PORT)
         connectDB()
 }
