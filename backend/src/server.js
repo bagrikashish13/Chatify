@@ -10,7 +10,7 @@ import dotenv from "dotenv";
 dotenv.config();
 import {app, server} from "./lib/socket.js";
 
-app.use(express.json({ limit: "10mb" }));
+app.use(express.json({ limit: "5mb" }));
 app.use(express.urlencoded({ extended: true, limit: "10mb" }));
 
 const __dirname = path.resolve();

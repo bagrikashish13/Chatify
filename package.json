@@ -1,28 +1,16 @@
 {
-  "name": "chat-app",
+  "name": "chatify-app",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "engines": {
     "node": ">=20.0.0"
   },
   "scripts": {
-    "start": "npm run start --prefix backend",
-    "build": "npm install--prefix backend && npm install --prefix frontend && npm run build --prefix frontend"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/bagrikashish13/Chatify.git"
+    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "npm run start --prefix backend"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/bagrikashish13/Chatify/issues"
-  },
-  "homepage": "https://github.com/bagrikashish13/Chatify#readme",
-  "dependencies": {
-    "nodemailer": "^7.0.10"
-  }
+  "description": ""
 }
