@@ -5,9 +5,8 @@
   "engines": {
     "node": ">=20.0.0"
   },
- "scripts": {
-  "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
-  "start": "cd backend && npm start"
-}
-
+  "scripts": {
+    "build": "npm install --prefix frontend && npm run build --prefix frontend && npm install --prefix backend",
+    "start": "npm start --prefix backend"
+  }
 }
